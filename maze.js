@@ -1,21 +1,6 @@
-//Kyle Ramgolam 620076006
-window.onload = function () {
-<<<<<<< HEAD
-    excercise1();
-};
-
-
-function excercise1() 
-{
-=======
-    //excercise1();
-    excercise2();
-};
-
 
 function excercise1() {
 
->>>>>>> master
     let Fboundary = document.getElementById("boundary1");
     
     Fboundary.onmouseover = function() {        
@@ -23,7 +8,6 @@ function excercise1() {
     };
 
 }
-
 
 function excercise2() {
 
@@ -42,4 +26,3 @@ function excercise2() {
 
 
 }
-
