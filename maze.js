@@ -24,8 +24,7 @@ function excercise1() {
 
 }
 
-<<<<<<< HEAD
-=======
+
 function excercise2() {
 
 	walls = document.querySelectorAll(".boundary");
@@ -43,4 +42,4 @@ function excercise2() {
 
 
 }
->>>>>>> master
+
