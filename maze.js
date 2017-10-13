@@ -1,3 +1,9 @@
+//Kyle Ramgolam 620076006
+window.onload = function () {
+    //excercise1();
+    excercise2();
+};
+
 
 function excercise1() {
 
