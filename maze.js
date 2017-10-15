@@ -19,6 +19,7 @@ function Main() {
 		walls[i].addEventListener("mouseover", function(){
 
 			for (var i=0;i<walls.length-1;i++){
+				document.getElementById("status").innerHTML = "You Lose!";
 				
 				walls[i].setAttribute("class", "boundary youlose");
 			}
@@ -32,7 +33,7 @@ function Main() {
  	E.addEventListener("mouseover",function(){
  		//console.log(Fboundary.className);
  		if (Fboundary.className != "boundary youlose") {
- 			window.alert("You Win!");
+ 			document.getElementById("status").innerHTML = "You Win";
  		}
  	});
 
