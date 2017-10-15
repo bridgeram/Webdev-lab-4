@@ -1,7 +1,12 @@
 //Kyle Ramgolam 620076006
 window.onload = function () {
-    Main();
-};
+	S=document.getElementById("start");
+	S.addEventListener("mouseover", function(){
+		Main();
+
+	});
+			
+}
 
 
 function Main() {
@@ -38,10 +43,25 @@ function Main() {
  	});
 
  	S=document.getElementById("start");
+ 	M=document.getElementById("maze");
 
  	S.addEventListener("click", function(){
  		location.reload();
- 	})
+ 	});
+
+ 	
+ 	M.addEventListener("mouseleave", function(){
+ 		for (var i=0;i<walls.length-1;i++){
+			document.getElementById("status").innerHTML = "You Lose!";
+			walls[i].setAttribute("class", "boundary youlose");
+		}
+ 	});
+
+ 	
+
+ 	
+
+
 
  
 }
