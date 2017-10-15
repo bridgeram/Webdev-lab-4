@@ -1,11 +1,10 @@
 //Kyle Ramgolam 620076006
 window.onload = function () {
-    //excercise1();
-    excercise2();
+    Main();
 };
 
 
-function excercise1() {
+function Main() {
 
     let Fboundary = document.getElementById("boundary1");
     
@@ -13,22 +12,28 @@ function excercise1() {
         this.setAttribute("class", "boundary youlose");        
     };
 
-}
-
-function excercise2() {
 
 	walls = document.querySelectorAll(".boundary");
-
 	for( var i=0; i<walls.length-1; i++ ){
 
-
 		walls[i].addEventListener("mouseover", function(){
-		 for (var i=0;i<walls.length-1;i++){
 
-			walls[i].setAttribute("class", "boundary youlose");}
+			for (var i=0;i<walls.length-1;i++){
+				
+				walls[i].setAttribute("class", "boundary youlose");
+			}
+				
+
 		});
-
 	}
+	
+ 	E = document.getElementById("end");
 
-
+ 	E.addEventListener("mouseover",function(){
+ 		//console.log(Fboundary.className);
+ 		if (Fboundary.className != "boundary youlose") {
+ 			window.alert("You Win!");
+ 		}
+ 	});
+ 
 }
