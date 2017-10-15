@@ -56,3 +56,4 @@ function Main() {
 			walls[i].setAttribute("class", "boundary youlose");
 		}
  	});
+}
