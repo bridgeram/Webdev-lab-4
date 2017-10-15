@@ -35,5 +35,12 @@ function Main() {
  			window.alert("You Win!");
  		}
  	});
+
+ 	S=document.getElementById("start");
+
+ 	S.addEventListener("click", function(){
+ 		location.reload();
+ 	})
+
  
 }
